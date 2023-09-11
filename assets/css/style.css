@@ -8,7 +8,8 @@ body {
     min-height: 100vh;
     color: #000000;
     background-color: #F5F5F5;
-    font-family: 'Roboto', sans-serif;      /*Trebuchet MS*/
+    font-family: 'roboto', sans-serif;     
+    /* Trebuchet MS */
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
@@ -34,9 +35,18 @@ body {
 
 
 
-.company-info:hover {
+/* .company-info:hover {
     background-color: #248C90;
     color: white;
+} */
+
+.product-content:hover{
+    background-color: #D6D8DC;
+    transition: 0.8s ease;
+}
+.btn-click:hover{
+    background-color: #D6D8DC;
+    transition: 0.8s ease;
 }
 
 /* information box  */
@@ -89,7 +99,7 @@ a{
     width: 324px;
     height: 179px;
     margin: 17px 0 0 30px;
-    box-shadow: -1px 2px 5px 0px grey;
+    box-shadow:rgb(240, 240, 240) -1px 2px 5px 0px;
     /* border: 1px solid #248C90; */
     border-radius: 10px;
 }
@@ -99,7 +109,7 @@ a{
     height: 40px;
     padding: 10px 0 0 20px;
     justify-content: center;
-    background: rgba(241, 239, 239, 0.686275);
+    background: white;
     /* border: 1px solid #248C90; */
     border-radius: 10px;
 }
@@ -107,7 +117,7 @@ a{
 
 .company-info {
     height: 30px;
-    background: rgba(241, 239, 239, 0.686275);
+    background: #FFFFFF;
     /* border: 2px solid #248C90; */
     margin-bottom: 10px;
     border-radius: 10px;
@@ -126,7 +136,8 @@ a{
     display: none;
 }
 .company-description {
-    padding: 16px 8px 0 24px;
+    background-color: #FFFFFF;
+    padding: 16px 8px 20px 24px;
 }
 #description-text {
     font-size: 14px;
@@ -139,22 +150,25 @@ a{
     height: 550px;
     margin: 17px 0 17px 30px;
     /* border: 1px solid #248C90; */
-    box-shadow: -1px 2px 5px 0px grey;
+    background-color: #FFFFFF;
+    box-shadow: -1px 2px 5px 0px #F0F0F0;
     border-radius: 10px;
 }
 .product-title {
     height: 60px;
-    background: rgba(241, 239, 239, 0.686275);
+    background:#FFFFFF ;
     /* border: 1px solid #248C90; */
     border-radius: 10px;
 }
 
 #pt-title {
     display: inline-block;
+    font-family: 'Urbanist';
     margin: 20px 0 22px 24px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 41px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
 }
 #pt-company {
     display: inline-block;
@@ -167,6 +181,10 @@ a{
     margin: 43px 55px 22px;
 }
 #pt-description {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin: 0 48px;
     font-size: 14px;
     text-align: left;
@@ -176,6 +194,7 @@ a{
     height: 182px;
     margin: 26px 21px 6px;
     border-radius: 10px;
+    border: 2px solid  #f0f0f0;
 }
 /* product description - mobile */
 .product-description-mobile {
@@ -185,7 +204,7 @@ a{
 .product-workflow-container {
     display: inline-flex;
     justify-content: space-between;
-   
+    gap: 10px;
     margin: 17px 0 12px;
 }
 .product-content {
@@ -194,15 +213,18 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FFFFFF;
     color: #5F5C5C;
-    border: 1px solid #B9B9B9;
+    /* border: 1px solid #B9B9B9; */
     border-radius: 10px;
     text-decoration: none;
 }
 .product-workflow-title {
     padding: 18px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
+    /* font-family: 'Urbanist'; */
+    color: #003E46;
     font-size: 18px;
     line-height: 25px;
 }
@@ -219,7 +241,8 @@ a{
     /* color: #5F5C5C; */
     line-height: 18px;
     background-color: white;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    box-shadow: rgb(240, 240, 240) -1px 2px 5px 0px;
     /* background: white(241, 239, 239, 0.686275); */
     border-radius: 10px;
 }
@@ -228,6 +251,7 @@ a{
 .product-content.active {
     width: 260px;
     height: 60px;
+    color: #FFFFFF;
     background-color: #248C90;
     border: 1px solid #248C90;
     cursor: pointer;
@@ -255,6 +279,41 @@ a{
     background: rgba(241, 239, 239, 0.686275);
     border-radius: 10px;
 }
+.icon-color {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; 
+  }
+  
+  /* Hide the active icon by default */
+  .icon-color .active-icon {
+    display: none;
+  }
+  
+  .icon-color.active .default-icon {
+    display: none;
+  }
+  
+  .icon-color.active .active-icon {
+    display: inline-block;
+  }
+  
+  /* Add any styling you want, like hover effects */
+  /* .icon-color:hover .default-icon {
+    display: none;
+  }
+  
+  .icon-color:hover .active-icon {
+    display: inline-block;
+  } */
+  
+
+  .icon-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
 /* Responsive Description */
 @media screen and (max-width: 1400px) {
     .product-workflow-container {
@@ -264,7 +323,7 @@ a{
     .product-content {
         width: 200px;
         /* height: 96px; */
-        font-weight: 600;
+        font-weight: 500;
         line-height: 22px;
         text-align: center;
     }
@@ -300,7 +359,7 @@ a{
     justify-content: center;
     align-items: center;
     /* background-color: #B9B9B9; */
-    /* gap: 120px; */
+    gap: 20px;
     position: relative;
 }
 
@@ -315,13 +374,13 @@ a{
 }
 .progress-bar-container::before {
     content: '';
-    /* background-color: #B9B9B9; */
     border-radius: 10px;
+    border: 1px dotted #248C90;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 4px;
+    /* height: 0px; */
     width: 450px;
     z-index: -5;
 }
@@ -351,7 +410,7 @@ a{
     justify-content: flex-start;
     align-items: center;
     border: transparent;
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px ;
     outline: transparent;
     cursor: pointer;
     padding: 20px;
@@ -411,7 +470,7 @@ a{
     margin: 17px 0 30px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: rgb(240, 240, 240) -1px 2px 5px 0px;
 }
 .map-content {
     width: 100%;
@@ -503,7 +562,7 @@ a{
         background-color: #248C90;
     }
     #imagePlasticBags1{
-        margin-top: 0px;
+        margin-top: -10px;
     }
     .company-description {
         display: none;
@@ -548,7 +607,7 @@ a{
         border-bottom: 1px solid #248C90;
     }
     #pt-title-info {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 15px;
         line-height: 20px;
         text-align: center;
@@ -556,7 +615,7 @@ a{
     #pt-code {
         margin-left: 6px;
         color: #248C90;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 12px;
         line-height: 16px;
         text-align: center;
@@ -565,7 +624,7 @@ a{
         color: #A2A2A2;
         margin: 12px 0 0 12px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 13.0588px;
         line-height: 18px;
     }
@@ -586,7 +645,7 @@ a{
         height: 55px;
     }
     .product-workflow-title {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
         line-height: 19px;
         text-align: center;
@@ -597,9 +656,9 @@ a{
         width: 146px;
     }
     .product-content.active .product-workflow-title {
-        padding: 17px;
+        /* padding: 17px; */
         white-space: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 13px;
         line-height: 19px;
         text-align: center;
@@ -619,6 +678,7 @@ a{
         content: '';
         /* background-color: #B9B9B9; */
         position: absolute;
+        border: none;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

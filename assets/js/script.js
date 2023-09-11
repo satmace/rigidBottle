@@ -5,6 +5,7 @@ const btn1 = document.querySelector("#btn1");
 const mapDisplay = document.querySelectorAll(".map-content");
 const mapBoxContainer = document.querySelector(".mapbox-container");
 let previousMapId = "mapbox1";
+const icon = document.getElementById('icon-color');
 
 // variables for "/images.html" file 
 const imageGalleryContainer = document.querySelector(".image-gallery-container");
@@ -21,6 +22,10 @@ const getBtnDataValue = {
     recycling: 3,
     product: 4
 };
+
+icon.addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
 
 // remove active class from all Btns 
 const removeActive = () => {

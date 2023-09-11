@@ -3,8 +3,8 @@
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
-    max-height: 450px;
-    margin: 48px 0 17px 0;
+    max-height: 550px;
+    margin: -20px 0 17px 0;
     padding: 12px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -30,6 +30,7 @@
 @media screen and (max-width: 850px) {
     .image-gallery-container {
         height: 550px;
+        margin: 40px 0 17px 0;
         grid-template-columns: auto;
     }
     .image-content {
