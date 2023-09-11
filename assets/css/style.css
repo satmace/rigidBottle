@@ -4,30 +4,33 @@
     box-sizing: border-box;
     /* border: 1px solid red !important; */
 }
+
 body {
     min-height: 100vh;
-    color: #000000;
+    /* color: #000000; */
     background-color: #F5F5F5;
-    font-family: 'roboto', sans-serif;     
+    /* font-family: 'Inter', sans-serif; */
     /* Trebuchet MS */
-    font-style: normal;
+    /* font-style: normal;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 16px; */
 }
 
-.product-info{
+.product-info {
     /* background-color: #248C90; */
-    padding-top:3px ;
+    padding-top: 3px;
     padding-left: 0px;
     width: 282px;
     height: 210px;
     margin: 26px 21px 6px;
     border-radius: 10px;
 }
-.product-info p{
+
+.product-info p {
     margin-bottom: 20px;
-   
+
 }
+
 /* .product-info p:hover{
     background-color: #1eb95a;
     
@@ -40,17 +43,20 @@ body {
     color: white;
 } */
 
-.product-content:hover{
+.product-content:hover {
     background-color: #D6D8DC;
     transition: 0.8s ease;
 }
-.btn-click:hover{
+
+.btn-click:hover {
     background-color: #D6D8DC;
     transition: 0.8s ease;
 }
 
 /* information box  */
-#infoBox , #infoBox3, #infoBox4{
+#infoBox,
+#infoBox3,
+#infoBox4 {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -60,46 +66,55 @@ body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     z-index: 1;
-  }
+}
 
 .srcLink {
-    
+
     text-align: right;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 .marker-popup {
     max-width: 250px;
-  }
-  
-  .marker-popup img {
+}
+
+.marker-popup img {
     max-width: 100%;
-  }
+}
 
 /* main */
 .website-container {
     display: flex;
     gap: 50px;
 }
+
 .sidePanelInfo {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
     width: 360px;
     max-width: 360px;
 }
+
 .sidePanelProduct {
     flex: 1;
     max-width: 1280px;
     margin-right: 30px;
 }
+
 /* Company information - top */
 .company-info-container {
-    
+
     width: 324px;
     height: 179px;
     margin: 17px 0 0 30px;
-    box-shadow:rgb(240, 240, 240) -1px 2px 5px 0px;
+    box-shadow: rgb(240, 240, 240) -1px 2px 5px 0px;
     /* border: 1px solid #248C90; */
     border-radius: 10px;
 }
@@ -132,18 +147,22 @@ a{
     height: 34px;
     margin: 16px 16px 0 24px;
 }
+
 #hamburgerIcon {
     display: none;
 }
+
 .company-description {
     background-color: #FFFFFF;
     padding: 16px 8px 20px 24px;
 }
+
 #description-text {
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 0.6px;
 }
+
 /* product information - bottom */
 .product-info-container {
     width: 324px;
@@ -154,59 +173,73 @@ a{
     box-shadow: -1px 2px 5px 0px #F0F0F0;
     border-radius: 10px;
 }
+
 .product-title {
     height: 60px;
-    background:#FFFFFF ;
+    background: #FFFFFF;
     /* border: 1px solid #248C90; */
     border-radius: 10px;
 }
 
 #pt-title {
     display: inline-block;
-    font-family: 'Urbanist';
+    font-family: 'Urbanist', sans-serif;
     margin: 20px 0 22px 24px;
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 20px;
 }
+
 #pt-company {
     display: inline-block;
     margin-left: 6px;
     font-size: 12px;
 }
+
 #imageRecycle {
     width: 214px;
     height: 170px;
     margin: 43px 55px 22px;
 }
+
 #pt-description {
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     margin: 0 48px;
     font-size: 14px;
     text-align: left;
 }
+
 #imageBags {
     width: 282px;
     height: 182px;
     margin: 26px 21px 6px;
     border-radius: 10px;
-    border: 2px solid  #f0f0f0;
+    border: 2px solid #f0f0f0;
 }
+
 /* product description - mobile */
 .product-description-mobile {
     display: none;
 }
+
 /* Product workflow */
 .product-workflow-container {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.5px;
     display: inline-flex;
     justify-content: space-between;
     gap: 10px;
     margin: 17px 0 12px;
 }
+
 .product-content {
     width: 260px;
     height: 60px;
@@ -219,8 +252,9 @@ a{
     border-radius: 10px;
     text-decoration: none;
 }
+
 .product-workflow-title {
-    padding: 18px;
+    padding: 0px;
     text-align: center;
     font-weight: 500;
     /* font-family: 'Urbanist'; */
@@ -228,24 +262,28 @@ a{
     font-size: 18px;
     line-height: 25px;
 }
+
 .product-workflow-description {
     display: none;
 }
-.product-map-info{
+
+.product-map-info {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
     place-items: center;
     width: 100%;
     margin-top: 20px;
-    /* height: 100%; */
     padding: 20px 8px;
-    font-size: 14px;
-    /* color: #5F5C5C; */
-    line-height: 18px;
     background-color: white;
     padding-left: 20px;
     box-shadow: rgb(240, 240, 240) -1px 2px 5px 0px;
-    /* background: white(241, 239, 239, 0.686275); */
     border-radius: 10px;
 }
+
 /* Active listing */
 /* .product-content.active { */
 .product-content.active {
@@ -257,6 +295,7 @@ a{
     cursor: pointer;
     /* background: rgba(241, 239, 239, 0.686275); */
 }
+
 .product-content.active .product-workflow-title {
     display: grid;
     place-items: center;
@@ -267,59 +306,72 @@ a{
     border-radius: 10px;
     background: #248C90;
 }
+
 .product-content.active .product-workflow-description {
     display: none;
     place-items: center;
     width: 100%;
     height: 100%;
     padding: 0 8px;
-    font-size: 14px;
+    font-size: 10px;
     color: #5F5C5C;
-    line-height: 18px;
+    line-height: 15px;
     background: rgba(241, 239, 239, 0.686275);
     border-radius: 10px;
 }
+
 .icon-color {
     position: relative;
     display: inline-block;
-    cursor: pointer; 
-  }
-  
-  /* Hide the active icon by default */
-  .icon-color .active-icon {
+    cursor: pointer;
+}
+
+/* Hide the active icon by default */
+.icon-color .active-icon {
     display: none;
-  }
-  
-  .icon-color.active .default-icon {
+}
+
+.icon-color.active .default-icon {
     display: none;
-  }
-  
-  .icon-color.active .active-icon {
+}
+
+.icon-color.active .active-icon {
     display: inline-block;
-  }
-  
-  /* Add any styling you want, like hover effects */
-  /* .icon-color:hover .default-icon {
+}
+
+/* Add any styling you want, like hover effects */
+/* .icon-color:hover .default-icon {
     display: none;
   }
   
   .icon-color:hover .active-icon {
     display: inline-block;
   } */
-  
 
-  .icon-container {
+
+.icon-container {
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center text */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    text-align: center;
+    /* Center text */
 }
+
 /* Responsive Description */
 @media screen and (max-width: 1400px) {
     .product-workflow-container {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0.5px;
         width: 100%;
         overflow-x: auto;
     }
+
     .product-content {
         width: 200px;
         /* height: 96px; */
@@ -327,24 +379,29 @@ a{
         line-height: 22px;
         text-align: center;
     }
-    .product-workflow-title  {
+
+    .product-workflow-title {
         padding: 0 12px;
         font-size: 16px;
     }
+
     .product-content.active .product-workflow-title {
         display: grid;
         place-items: center;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .product-content.active {
         width: -moz-fit-content;
         width: fit-content;
     }
+
     .product-content.active .product-workflow-description {
         display: none;
     }
 }
+
 /* buttons mapping */
 .map-button-container {
     width: 100%;
@@ -354,6 +411,7 @@ a{
     margin: 30px auto;
     position: relative;
 }
+
 .progress-bar-container {
     display: inline-flex;
     justify-content: center;
@@ -372,6 +430,7 @@ a{
     gap: 320px;
     position: relative;
 }
+
 .progress-bar-container::before {
     content: '';
     border-radius: 10px;
@@ -384,6 +443,7 @@ a{
     width: 450px;
     z-index: -5;
 }
+
 .progress-bar-container1::before {
     content: '';
     /* background-color: #B9B9B9; */
@@ -395,6 +455,7 @@ a{
     width: 450px;
     z-index: -5;
 }
+
 .buttons-container {
     width: 150px;
     height: 50px;
@@ -403,6 +464,7 @@ a{
     /* border-radius: 10px; */
     /* box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1); */
 }
+
 .btn-click {
     width: 100%;
     height: 100%;
@@ -410,14 +472,15 @@ a{
     justify-content: flex-start;
     align-items: center;
     border: transparent;
-    border-radius: 10px ;
+    border-radius: 10px;
     outline: transparent;
     cursor: pointer;
     padding: 20px;
     /* border: #050505 1px solid; */
     background-color: white;
-    transition: #248C90 0.3s; 
+    transition: #248C90 0.3s;
 }
+
 .btn-icons {
     width: 20px;
     height: 20px;
@@ -426,28 +489,34 @@ a{
     mix-blend-mode: luminosity;
     /* transition: mix-blend-mode .5s ease-in-out, border .5s ease-in-out; */
 }
+
 .buttons-container:first-child .btn-icons {
-    width:20px;
+    width: 20px;
     height: 20px;
 }
+
 .btn-text {
     display: block;
     margin-top: 16px;
     color: #7B7B7B;
 }
+
 /* active button */
 .btn-click.active {
-    background-color:#248C90 ;
+    background-color: #248C90;
     border: 1px solid #248C90;
     color: white;
 }
-.btn-click.active + .btn-text {
+
+.btn-click.active+.btn-text {
     color: black;
 }
+
 .btn-click.active .btn-icons {
     mix-blend-mode: normal;
-    color:white ;
+    color: white;
 }
+
 /* progress bar */
 .progressbar {
     position: absolute;
@@ -461,6 +530,7 @@ a{
     /* background-color: #248C90; */
     transition: width .5s ease-in-out;
 }
+
 /* MapBox Container */
 .mapbox-container {
     display: block;
@@ -472,15 +542,18 @@ a{
     border-radius: 10px;
     box-shadow: rgb(240, 240, 240) -1px 2px 5px 0px;
 }
+
 .map-content {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     display: none;
 }
+
 .map-active {
     display: block;
 }
+
 /* Moving truck styling for text above it */
 .distance {
     position: absolute;
@@ -491,25 +564,31 @@ a{
     background-color: #fff;
     padding: 5px;
     white-space: nowrap;
-  }
+}
+
 /* Mobile Responsive CSS */
 @media screen and (max-width: 1000px) {
+
     /* website container */
     .website-container {
         display: block;
     }
+
     .marker-popup {
         width: 40%;
         height: 40%;
     }
-    
+
     .sidePanelInfo {
+        font-family: 'Inter', sans-serif;
         width: 90%;
         max-width: 92%;
     }
+
     .sidePanelProduct {
         margin: 0 16px;
     }
+
     /* product info - top */
     .company-info-container {
         /* display: none; */
@@ -518,6 +597,7 @@ a{
         height: fit-content;
         border: 1px solid transparent;
     }
+
     .btn-click {
         width: 280%;
         height: 100%;
@@ -525,13 +605,13 @@ a{
         justify-content: flex-start;
         align-items: center;
         border: transparent;
-        border-radius: 10px ;
+        border-radius: 10px;
         outline: transparent;
         cursor: pointer;
         margin-top: 15px;
         padding: 15px;
         background-color: #248C90;
-        transition: #248C90 0.3s; 
+        transition: #248C90 0.3s;
     }
 
     .company-logo {
@@ -542,6 +622,7 @@ a{
         background-color: #F5F5F5;
         border: 1px solid transparent;
     }
+
     .company-info {
         display: flex;
         width: inherit;
@@ -550,34 +631,40 @@ a{
         border: 1px solid transparent;
     }
 
-   
+
 
     #hamburgerIcon {
         display: block;
         width: 30px;
         height: 30px;
         padding: 3px;
-        margin: -5px 12px; 
+        margin: -5px 12px;
         border-radius: 5px;
         background-color: #248C90;
     }
-    #imagePlasticBags1{
+
+    #imagePlasticBags1 {
         margin-top: -10px;
     }
+
     .company-description {
         display: none;
     }
+
     /* company info - top */
     .company-info-container {
         margin: 16px 0 0 16px;
     }
+
     #imageLogo {
         margin-left: 16px;
     }
+
     /* product description - bottom */
     .product-info-container {
         display: none;
     }
+
     /* product description - mobile */
     .product-description-mobile {
         display: flex;
@@ -590,28 +677,34 @@ a{
         border-radius: 10px;
         margin: 16px;
     }
+
     .product-image-content {
         border-radius: 10px;
     }
+
     #imagePlasticBags {
         width: 120px;
         height: 100px;
         margin: 8px 0 8px 8px;
         border-radius: 10px;
     }
+
     .product-info-content {
         width: 100%;
     }
+
     .title-info {
         padding: 16px 0 10px 14px;
         border-bottom: 1px solid #248C90;
     }
+
     #pt-title-info {
         font-weight: 500;
         font-size: 15px;
         line-height: 20px;
         text-align: center;
     }
+
     #pt-code {
         margin-left: 6px;
         color: #248C90;
@@ -620,6 +713,7 @@ a{
         line-height: 16px;
         text-align: center;
     }
+
     .pt-info {
         color: #A2A2A2;
         margin: 12px 0 0 12px;
@@ -628,22 +722,30 @@ a{
         font-size: 13.0588px;
         line-height: 18px;
     }
+
     /* page listing */
     .product-workflow-container {
         overflow-x: auto;
         gap: 16px;
         padding: 12px 0;
     }
+
     .product-workflow-container::-webkit-scrollbar {
-        width: 0; /* hides the default scrollbar in WebKit browsers */
+        width: 0;
+        /* hides the default scrollbar in WebKit browsers */
     }
+
     .product-workflow-container::-webkit-scrollbar-track {
-        background-color: transparent; /* hides the scrollbar track */
+        background-color: transparent;
+        /* hides the scrollbar track */
     }
-    .product-content, .product-content.active {
+
+    .product-content,
+    .product-content.active {
         min-width: 150px;
         height: 55px;
     }
+
     .product-workflow-title {
         font-weight: 500;
         font-size: 14px;
@@ -652,9 +754,11 @@ a{
         color: black;
         padding: 8px;
     }
+
     .product-content.active {
         width: 146px;
     }
+
     .product-content.active .product-workflow-title {
         /* padding: 17px; */
         white-space: normal;
@@ -664,16 +768,20 @@ a{
         text-align: center;
         color: white;
     }
+
     .product-content.active .product-workflow-description {
         display: none;
     }
+
     /* buttons mapping */
     .map-button-container {
         margin-top: 0;
     }
+
     .progress-bar-container {
         gap: 80px;
     }
+
     .progress-bar-container::before {
         content: '';
         /* background-color: #B9B9B9; */
@@ -690,6 +798,7 @@ a{
     .progress-bar-container1 {
         gap: 100px;
     }
+
     .progress-bar-container1::before {
         content: '';
         /* background-color: #B9B9B9; */
@@ -701,24 +810,30 @@ a{
         width: 180px;
         z-index: -5;
     }
+
     .progressbar {
         display: none;
     }
+
     .buttons-container {
         width: 40px;
         height: 40px;
     }
+
     .btn-icons {
         width: 24px;
         height: 20px;
     }
+
     .btn-text {
         font-size: 12px;
     }
+
     .buttons-container:first-child .btn-icons {
         width: 18px;
         height: 20px;
     }
+
     /* location map */
     .map-display-container {
         height: 320px;
