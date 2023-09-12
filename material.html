@@ -7,6 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Satma CE | Mumbai</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <!-- External/Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Current Page CSS -->
@@ -17,7 +20,23 @@
 
 <body>
 
+    <div class="nav-bar">
+        <a href="https://staging.satmace.com/organisation/dashboard">
+            <div type="button" class="nav-button">
+                <img src="assets\images\gallery\HOME-icon.png" alt="Plastic Bags" id="imagePlasticBags1"> &nbsp;Home
+            </div>
+        </a>
+    </div>
+
     <main class="website-container">
+
+        <div class="company-logo">
+            <div type="button" class="btn-click1 ">
+                <img src="assets\images\gallery\HOME-icon.png" alt="Plastic Bags" id="imagePlasticBags1">HOME
+            </div>
+            <a href="SATMA CE.pdf" download id="downloadLink"><img src="assets\images\gallery\Download-icon.png"
+                    alt="HamBurger Icon" id="hamburgerIcon"></a>
+        </div>
 
         <!-- Left Side Panel -->
         <div class="sidePanelInfo">
@@ -70,7 +89,7 @@
             </div>
 
             <div class="company-info-container">
-                <div class="company-logo">
+                <div class="company-logo1">
                     <img src="assets\images\Satma-Logo.png" alt="Plastic Bags" id="imagePlasticBagsq">
                     <a href="SATMA CE.pdf" download id="downloadLink"><img src="./assets/images/hamburger-icon.png"
                             alt="HamBurger Icon" id="hamburgerIcon"></a>
@@ -108,7 +127,7 @@
                 <a href="./index.html" class="product-content">
                     <div class="product-workflow-title">
                         <div class="icon-color" id="icon-color">
-                            <article  class="icon-container"><img src="assets\images\gallery\product-journey.png" alt=""
+                            <article class="icon-container"><img src="assets\images\gallery\product-journey.png" alt=""
                                     class="default-icon"><img src="assets\images\gallery\Vectorproduct-white.png" alt=""
                                     class="active-icon">&nbsp; Product Journey
                             </article>
@@ -122,7 +141,8 @@
                 <a class="product-content active">
                     <div class="product-workflow-title">
                         <div class="icon-color active" id="icon-color">
-                            <article  class="icon-container"><img src="assets\images\gallery\material-flow.png" alt="" class="default-icon">
+                            <article class="icon-container"><img src="assets\images\gallery\material-flow.png" alt=""
+                                    class="default-icon">
                                 <img src="assets\images\gallery\Vectormaterial-flow-white'.png" alt=""
                                     class="active-icon"> &nbsp;Material Flow
                             </article>
@@ -136,7 +156,8 @@
                 <a href="./images.html" class="product-content">
                     <div class="product-workflow-title">
                         <div class="icon-color" id="icon-color">
-                            <article  class="icon-container"><img src="assets\images\gallery\image-flow.png" alt="" class="default-icon">
+                            <article class="icon-container"><img src="assets\images\gallery\image-flow.png" alt=""
+                                    class="default-icon">
                                 <img src="assets\images\gallery\Vectorimage-white.png" alt="" class="active-icon">&nbsp;
                                 Images
                             </article>
@@ -151,11 +172,12 @@
                 <a href="./report.html" class="product-content">
                     <div class="product-workflow-title">
                         <div class="icon-color" id="icon-color">
-                            <article  class="icon-container"><img src="assets\images\gallery\emisson-report.png" alt="" class="default-icon">
+                            <article class="icon-container"><img src="assets\images\gallery\emisson-report.png" alt=""
+                                    class="default-icon">
                                 <img src="assets\images\gallery\Vectoremisson-white.png" alt=""
                                     class="active-icon">&nbsp; Emission Report
                             </article>
-                    </div>
+                        </div>
                     </div>
                     <!-- <div class="product-workflow-description">
                         <p>Tracking environmental impact with Satma CE's powerful analytics</p>
@@ -175,19 +197,31 @@
                     <p>Flow of waste material from collection of waste to development of final invoiced packaging made
                         from waste.</p>
                     <br> -->
-                <!-- </div> -->
+            <!-- </div> -->
             <!-- </div>  -->
             <div class="product-map-info">
-                <p>Flow of waste material from collection of waste to development of final invoiced packaging made from waste.</p>
+                <p>Flow of waste material from collection of waste to development of final invoiced packaging made from
+                    waste.</p>
             </div>
 
             <!-- Workflow chart -->
+
+            <script src="//cdn.amcharts.com/lib/4/core.js"></script>
+            <script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+            <script src="//cdn.amcharts.com/lib/4/themes/animated.js"></script>
+            <script src="//cdn.amcharts.com/lib/4/themes/material.js"></script>
+            <script src="//cdn.amcharts.com/lib/4/themes/dark.js"></script>
+            <script src="//cdn.amcharts.com/lib/4/themes/kelly.js"></script>
             <div class="material-flow-chart">
+                <!-- <div id="chartdiv imageMaterialFlow" class=" imageMaterialFlow"></div> -->
                 <img src="assets\images\Material-flow.jpeg" alt="Material Flow Chart" id="imageMaterialFlow">
             </div>
 
         </div>
     </main>
+
+     <!-- JavaScript -->
+     <script src="./assets/js/sankey.js" defer></script>
 
 </body>
 

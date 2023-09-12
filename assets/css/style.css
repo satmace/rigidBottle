@@ -22,13 +22,27 @@ body {
     padding-left: 0px;
     width: 282px;
     height: 210px;
-    margin: 26px 21px 6px;
+    margin: 26px 6px 6px;
     border-radius: 10px;
 }
+
+#chartdiv {
+    font-size: 12px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 400px;
+    
+  }
 
 .product-info p {
     margin-bottom: 20px;
 
+}
+
+a{
+    text-decoration: none;
+    color:#202124;
+    ;
 }
 
 /* .product-info p:hover{
@@ -113,22 +127,44 @@ a {
 
     width: 324px;
     height: 179px;
-    margin: 17px 0 0 30px;
+    margin: 17px 0 0 20px;
     box-shadow: rgb(240, 240, 240) -1px 2px 5px 0px;
     /* border: 1px solid #248C90; */
-    border-radius: 10px;
+    border-radius: 16px;
 }
 
 
 .company-logo {
+    display: none;
     height: 40px;
     padding: 10px 0 0 20px;
     justify-content: center;
     background: white;
     /* border: 1px solid #248C90; */
-    border-radius: 10px;
+    border-radius: 16px 16px ;
 }
 
+.company-logo1 {
+    height: 40px;
+    padding: 10px 0 0 20px;
+    justify-content: center;
+    /* border-radius: 16px; */
+    background: white;
+    /* border: 1px solid #248C90; */
+    /* border-radius: 10px; */
+}
+
+.nav-bar{
+    background-color: #FFFFFF;
+    height: 56px;
+    display: flex;
+    font-size: 20px;
+    padding : 15px 10px 0 42px;
+}
+
+.nav-button:hover{
+    background-color: #f0f0f0;
+}
 
 .company-info {
     height: 30px;
@@ -167,7 +203,7 @@ a {
 .product-info-container {
     width: 324px;
     height: 550px;
-    margin: 17px 0 17px 30px;
+    margin: 16px 0 17px 18px;
     /* border: 1px solid #248C90; */
     background-color: #FFFFFF;
     box-shadow: -1px 2px 5px 0px #F0F0F0;
@@ -176,6 +212,7 @@ a {
 
 .product-title {
     height: 60px;
+    font-family: 'Urbanist', sans-serif;
     background: #FFFFFF;
     /* border: 1px solid #248C90; */
     border-radius: 10px;
@@ -183,7 +220,7 @@ a {
 
 #pt-title {
     display: inline-block;
-    font-family: 'Urbanist', sans-serif;
+    
     margin: 20px 0 22px 24px;
     font-size: 22px;
     font-style: normal;
@@ -326,17 +363,39 @@ a {
     cursor: pointer;
 }
 
+.btn-click{
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center; 
+    gap: 8px;
+    /* padding: 10px;  */
+    font-size: 14px;
+}
+
 /* Hide the active icon by default */
 .icon-color .active-icon {
     display: none;
+}
+.btn-click .active-icon {
+    display: none;
+    width: 20px;
 }
 
 .icon-color.active .default-icon {
     display: none;
 }
+.btn-click.active .default-icon {
+    display: none;
+}
 
 .icon-color.active .active-icon {
     display: inline-block;
+    
+}
+.btn-click.active .active-icon {
+    display: inline-block;
+    width: 20px;
 }
 
 /* Add any styling you want, like hover effects */
@@ -360,6 +419,31 @@ a {
 }
 
 /* Responsive Description */
+@media screen and  (min-width: 1600px) and (max-width: 2400px )   {
+    body {
+        font-family:  'Urbanist', sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .nav-bar{
+        background-color: #FFFFFF;
+        height: 56px;
+        display: flex;
+        font-size: 20px;
+        padding : 15px 10px 0 100px;
+    }
+
+    .website-container {
+        display: flex;
+        gap: 100px;
+        margin: 100px 20px  0 80px;
+    }
+    .product-workflow-container{
+        gap: 60px;
+    }
+   
+}
+
 @media screen and (max-width: 1400px) {
     .product-workflow-container {
         font-family: 'Urbanist', sans-serif;
@@ -430,6 +514,7 @@ a {
 
 
 
+
 .progress-bar-container1 {
     display: flex;
     justify-content: center;
@@ -441,7 +526,7 @@ a {
 .progress-bar-container::before {
     content: '';
     border-radius: 10px;
-    border: 1px dotted #248C90;
+    border: 0.5px solid #bebebe;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -497,7 +582,7 @@ a {
     /* transition: mix-blend-mode .5s ease-in-out, border .5s ease-in-out; */
 }
 
-.buttons-container:first-child .btn-icons {
+.buttons-container:first-child .btn-icons   {
     width: 20px;
     height: 20px;
 }
@@ -542,7 +627,7 @@ a {
 .mapbox-container {
     display: block;
     width: 100%;
-    height: 470px;
+    height: 460px;
     padding: 16px;
     margin: 17px 0 30px;
     background-color: white;
@@ -578,9 +663,12 @@ a {
 
     /* website container */
     .website-container {
-        display: block;
+        display: inline;
     }
 
+    .nav-bar{
+        display: none;
+    }
     .marker-popup {
         width: 40%;
         height: 40%;
@@ -596,6 +684,26 @@ a {
         margin: 0 16px;
     }
 
+    .company-logo1{
+        display: none;
+    }
+
+    .icon-container {
+        display: flex;
+        align-items: center;
+        
+        /* Center vertically */
+        justify-content: center;
+        /* Center horizontally */
+        text-align: center;
+        /* Center text */
+    }
+
+
+    /* .material-flow-chart{
+        transform: rotate(90deg);
+        height: 500px   ;
+    } */
     /* product info - top */
     .company-info-container {
         /* display: none; */
@@ -616,41 +724,69 @@ a {
         outline: transparent;
         cursor: pointer;
         margin-top: 15px;
-        padding: 15px;
-        background-color: #248C90;
+        /* padding: 15px; */
+        font-size: 10px;
+        padding-left: 8px;
+        /* background-color: #248C90; */
         transition: #248C90 0.3s;
     }
+    .btn-click1 {
+        text-align: center;
+        gap: 8px;
+        width: 280%;
+        height: 60%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: transparent;
+        border-radius: 10px;
+        outline: transparent;
+        cursor: pointer;
+        margin-top: 0px;
+        /* padding: 15px; */
+        font-size: 15px;
+        padding-left: 8px;
+        /* background-color: #248C90; */
+        /* transition: #248C90 0.3s; */
+    }
+
 
     .company-logo {
         display: flex;
-        width: inherit;
+        /* display: flex; */
+        /* width: 300px; */
+        padding-top: 20px;
         /* margin-top: 0px; */
         justify-content: space-between;
-        background-color: #F5F5F5;
-        border: 1px solid transparent;
+        background-color: #FFFFFF;
+        /* border: 1px solid transparent; */
     }
 
     .company-info {
         display: flex;
         width: inherit;
         justify-content: space-between;
-        background-color: #F5F5F5;
+        /* background-color: #F5F5F5; */
         border: 1px solid transparent;
+        padding: 5px;
     }
 
 
 
     #hamburgerIcon {
         display: block;
-        width: 30px;
-        height: 30px;
-        padding: 3px;
-        margin: -5px 12px;
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+        margin: -11px 13px;
         border-radius: 5px;
-        background-color: #248C90;
+        /* background-color: #248C90; */
     }
 
     #imagePlasticBags1 {
+        /* display: none; */
+        width: 20px;
+        height: 20px;
         margin-top: -10px;
     }
 
@@ -669,12 +805,12 @@ a {
 
     /* product description - bottom */
     .product-info-container {
-        display: none;
+        display: inline-block;
     }
 
     /* product description - mobile */
     .product-description-mobile {
-        display: flex;
+        display: none;
         justify-content: center;
         width: 92%;
         min-width: 300px;
@@ -732,6 +868,7 @@ a {
 
     /* page listing */
     .product-workflow-container {
+        /* flex-wrap: wrap; */
         overflow-x: auto;
         gap: 16px;
         padding: 12px 0;

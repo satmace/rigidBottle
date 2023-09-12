@@ -148,7 +148,7 @@ var infoBox3 = document.getElementById("infoBox3");
 var map3 = new mapboxgl.Map({
     container: mapContainer3,
     style: 'mapbox://styles/mapbox/streets-v12',
-    center: [72.9968, 20.50095],
+    center:[73.856255, 19.316726],                                                       //[72.9968, 20.50095],
     zoom: 6
 });
 

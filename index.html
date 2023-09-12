@@ -7,6 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Satma CE | Mumbai</title>
 
+
+    <!-- gooogle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <!-- External/Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Favicon -->
@@ -16,10 +21,28 @@
 </head>
 
 <body>
+    <div class="nav-bar">
+        <a href="https://staging.satmace.com/organisation/dashboard">
+            <div type="button" class="nav-button">
+                <img src="assets\images\gallery\HOME-icon.png" alt="Plastic Bags" id="imagePlasticBags1"> &nbsp;Home
+            </div>
+        </a>
+    </div>
 
     <main class="website-container">
 
+
         <!-- Left Side Panel -->
+        <div class="company-logo">
+            <a href="https://staging.satmace.com/organisation/dashboard">
+                <div type="button" class="btn-click1 ">
+                    <img src="assets\images\gallery\HOME-icon.png" alt="Plastic Bags" id="imagePlasticBags1">Home
+                </div>
+            </a>
+            <a href="SATMA CE.pdf" download id="downloadLink"><img src="assets\images\gallery\Download-icon.png"
+                    alt="HamBurger Icon" id="hamburgerIcon"></a>
+        </div>
+
         <div class="sidePanelInfo">
             <!-- Company information - top -->
             <!-- <div class="company-info-container">
@@ -33,6 +56,7 @@
                         <br><br>Any elements or images used here cannot be replicated or reused elsewhere.</p>
                 </div>
             </div> -->
+
 
             <!-- product information - bottom -->
             <div class="product-info-container">
@@ -70,7 +94,7 @@
             </div>
 
             <div class="company-info-container">
-                <div class="company-logo">
+                <div class="company-logo1 ">
                     <img src="assets\images\Satma-Logo.png" alt="Plastic Bags" id="imagePlasticBags1">
                     <a href="SATMA CE.pdf" download id="downloadLink"><img src="./assets/images/hamburger-icon.png"
                             alt="HamBurger Icon" id="hamburgerIcon"></a>
@@ -107,12 +131,12 @@
 
                 <a class="product-content active">
                     <!-- <div> -->
-                        <!-- class="product-workflow-title" -->
-                        <div class="icon-color active" id="icon-color">
-                            <article class="icon-container"><img src="assets\images\gallery\product-journey.png" alt=""
-                                    class="default-icon"><img src="assets\images\gallery\Vectorproduct-white.png" alt=""
-                                    class="active-icon">&nbsp; Product Journey
-                            </article>
+                    <!-- class="product-workflow-title" -->
+                    <div class="icon-color active" id="icon-color">
+                        <article class="icon-container"><img src="assets\images\gallery\product-journey.png" alt=""
+                                class="default-icon"><img src="assets\images\gallery\Vectorproduct-white.png" alt=""
+                                class="active-icon">&nbsp; Product Journey
+                        </article>
                         <!-- </div> -->
                     </div>
                     <!-- <div class="product-workflow-description">
@@ -124,7 +148,8 @@
                 <a href="./material.html" class="product-content">
                     <div class="product-workflow-title">
                         <div class="icon-color" id="icon-color">
-                            <article class="icon-container"><img src="assets\images\gallery\material-flow.png" alt="" class="default-icon">
+                            <article class="icon-container"><img src="assets\images\gallery\material-flow.png" alt=""
+                                    class="default-icon">
                                 <img src="assets\images\gallery\Vectormaterial-flow-white'.png" alt=""
                                     class="active-icon"> &nbsp;Material Flow
                             </article>
@@ -139,7 +164,8 @@
                 <a href="./images.html" class="product-content">
                     <div class="product-workflow-title">
                         <div class="icon-color" id="icon-color">
-                            <article class="icon-container"><img src="assets\images\gallery\image-flow.png" alt="" class="default-icon">
+                            <article class="icon-container"><img src="assets\images\gallery\image-flow.png" alt=""
+                                    class="default-icon">
                                 <img src="assets\images\gallery\Vectorimage-white.png" alt="" class="active-icon">&nbsp;
                                 Images
                             </article>
@@ -154,7 +180,8 @@
                 <a href="./report.html" class="product-content">
                     <div class="product-workflow-title">
                         <div class="icon-color" id="icon-color">
-                            <article class="icon-container"><img src="assets\images\gallery\emisson-report.png" alt="" class="default-icon">
+                            <article class="icon-container"><img src="assets\images\gallery\emisson-report.png" alt=""
+                                    class="default-icon">
                                 <img src="assets\images\gallery\Vectoremisson-white.png" alt=""
                                     class="active-icon">&nbsp; Emission Report
                             </article>
@@ -179,8 +206,11 @@
                     <!-- Buttons -->
                     <div class="buttons-container" id="btn1">
                         <div type="button" class="btn-click active" data="1">
+
                             <img src="assets\images\gallery\collection.png" alt="Collection Icon"
-                                class="btn-icons">Collection
+                                class="btn-icons default-icon"><img
+                                src="assets\images\gallery\Vectorcollection-white.png" alt=""
+                                class="btn-icons active-icon">Collection
 
                         </div>
 
@@ -195,14 +225,18 @@
 
                     <div class="buttons-container" data="3">
                         <div type="button" class="btn-click" data="3">
-                            <img src="assets\images\gallery\recycling.png" alt="Collection Icon" class="btn-icons">
+                            <img src="assets\images\gallery\recycling.png" alt="Collection Icon"
+                                class="btn-icons default-icon"><img src="assets\images\gallery\Vectorrecycle-white.png"
+                                alt="" class="btn-icons active-icon">
                             Recycling
                         </div>
                     </div>
 
                     <div class="buttons-container" data="4">
                         <div type="button" class="btn-click" data="4">
-                            <img src="assets\images\gallery\product.png" alt="Collection Icon" class="btn-icons">
+                            <img src="assets\images\gallery\product.png" alt="Collection Icon "
+                                class="btn-icons default-icon"><img src="assets\images\gallery\product-white.png" alt=""
+                                class="btn-icons active-icon">
                             Product
                         </div>
 
